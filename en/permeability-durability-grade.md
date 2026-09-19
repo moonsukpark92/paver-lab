@@ -29,9 +29,10 @@ fouling rather than when new. As a rule, only grade 3 or better may be used; ung
 
 | Item | Value | Basis | Verified |
 |---|---|---|---|
-| Permeability at acceptance | ≥ 0.1 mm/s (mean of 3 specimens, ≥ 1 min apart) | KS F 4419 | <span class="badge badge--unverified">unverified</span> secondary [1] |
-| Flexural strength (pedestrian) | ≥ 4.0 MPa | KS F 4419 | <span class="badge badge--unverified">unverified</span> secondary [1] |
-| Face mix layer | ≥ 8 mm, no delamination after flexural test | KS F 4419 | <span class="badge badge--unverified">unverified</span> secondary [1] |
+| Permeability at acceptance | ≥ 0.1 mm/s (mean of 3 specimens, ≥ 1 min apart) | KS F 4419:2022 Table 1, 8.3.2 f | <span class="badge badge--verified">primary</span> |
+| Flexural strength · pedestrian | ≥ 4.0 MPa | KS F 4419:2022 Table 1 | <span class="badge badge--verified">primary</span> |
+| Flexural strength · vehicular | ≥ 5.0 MPa | KS F 4419:2022 Table 1 | <span class="badge badge--verified">primary</span> |
+| Surface layer thickness | ≥ 6 mm, no delamination after flexural test | KS F 4419:2022 §4.3 | <span class="badge badge--verified">primary</span> |
 | Durability grade | grade 3 or better only | Seoul standard | <span class="badge badge--unverified">unverified</span> secondary [2] |
 | Cleaning interval | twice yearly (March, June), vacuum + high-pressure | Seoul maintenance standard | <span class="badge badge--unverified">unverified</span> secondary [2] |
 | Field performance after maintenance | ≥ 0.1 mm/s (K-SWIFT: 3 L of water, wetted area measured) | Seoul 2025 contract | <span class="badge badge--unverified">unverified</span> secondary [2] |
@@ -56,7 +57,7 @@ already failed on the drawing board. We have not yet confirmed this against a pr
 ## Open questions
 
 1. How closely does the contamination procedure resemble real street fines?
-2. What are the quantitative boundaries between grades 1, 2 and 3?
+2. What are the quantitative boundaries between grades 1, 2 and 3? (Resolved in part: KS F 4419:2022 leaves the grade column empty for permeable units — grading is Seoul's, not KS's.)
 3. Where does the "1.0 mm/s at acceptance" figure originate, and on what decay curve?
 4. How much permeability does twice-yearly cleaning actually recover? Without that number the interval has no basis.
 

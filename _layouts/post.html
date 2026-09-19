@@ -10,6 +10,11 @@ layout: default
     </p>
     <h1>{{ page.title }}</h1>
     {% if page.excerpt_text %}<p class="posthead__lede">{{ page.excerpt_text }}</p>{% endif %}
+    <p class="posthead__by">
+      <span>박문석 · <b>데코페이브</b></span>
+      <span>{{ page.date | date: "%Y년 %-m월 %-d일" }}</span>
+      {% if page.verified %}<span>원문 확인 <b>{{ page.verified }}</b>건{% if page.unverified %} · 미검증 <b>{{ page.unverified }}</b>건{% endif %}</span>{% endif %}
+    </p>
   </header>
   {{ content }}
 </article>

@@ -3,9 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#101214" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#fdfdfb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111110" media="(prefers-color-scheme: dark)">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
@@ -17,11 +19,7 @@
   <header class="masthead">
     <div class="wrap masthead__inner">
       <a class="brand" href="{{ '/' | relative_url }}">
-        <span class="brand__mark" aria-hidden="true"></span>
-        <span class="brand__text">
-          <strong>콘크리트 보도블록 연구소</strong>
-          <span translate="no">Paver&nbsp;Lab</span>
-        </span>
+        콘크리트 보도블록 <em>연구소</em>
       </a>
       <nav class="nav" aria-label="주요">
         <a href="{{ '/standards/' | relative_url }}"{% if page.url == '/standards/' %} aria-current="page"{% endif %}>표준 원장</a>
