@@ -8,7 +8,6 @@ lang: ko
 baseurl: "/paver-lab"
 url: "https://moonsukpark92.github.io"
 
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -21,9 +20,5 @@ defaults:
   - scope: {path: "", type: posts}
     values: {layout: post}
 
-header_pages:
-  - about.md
-  - standards.md
-  - en/index.md
 
 exclude: [README.md, Gemfile, Gemfile.lock]

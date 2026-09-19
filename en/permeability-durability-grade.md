@@ -29,12 +29,12 @@ fouling rather than when new. As a rule, only grade 3 or better may be used; ung
 
 | Item | Value | Basis | Verified |
 |---|---|---|---|
-| Permeability at acceptance | ≥ 0.1 mm/s (mean of 3 specimens, ≥ 1 min apart) | KS F 4419 | `[unverified]` secondary [1] |
-| Flexural strength (pedestrian) | ≥ 4.0 MPa | KS F 4419 | `[unverified]` secondary [1] |
-| Face mix layer | ≥ 8 mm, no delamination after flexural test | KS F 4419 | `[unverified]` secondary [1] |
-| Durability grade | grade 3 or better only | Seoul standard | `[unverified]` secondary [2] |
-| Cleaning interval | twice yearly (March, June), vacuum + high-pressure | Seoul maintenance standard | `[unverified]` secondary [2] |
-| Field performance after maintenance | ≥ 0.1 mm/s (K-SWIFT: 3 L of water, wetted area measured) | Seoul 2025 contract | `[unverified]` secondary [2] |
+| Permeability at acceptance | ≥ 0.1 mm/s (mean of 3 specimens, ≥ 1 min apart) | KS F 4419 | <span class="badge badge--unverified">unverified</span> secondary [1] |
+| Flexural strength (pedestrian) | ≥ 4.0 MPa | KS F 4419 | <span class="badge badge--unverified">unverified</span> secondary [1] |
+| Face mix layer | ≥ 8 mm, no delamination after flexural test | KS F 4419 | <span class="badge badge--unverified">unverified</span> secondary [1] |
+| Durability grade | grade 3 or better only | Seoul standard | <span class="badge badge--unverified">unverified</span> secondary [2] |
+| Cleaning interval | twice yearly (March, June), vacuum + high-pressure | Seoul maintenance standard | <span class="badge badge--unverified">unverified</span> secondary [2] |
+| Field performance after maintenance | ≥ 0.1 mm/s (K-SWIFT: 3 L of water, wetted area measured) | Seoul 2025 contract | <span class="badge badge--unverified">unverified</span> secondary [2] |
 
 The most important line is not in the table:
 
@@ -42,7 +42,7 @@ The most important line is not in the table:
 > **≥ 1.0 mm/s at acceptance**. [2]
 
 Ten times the limit, to meet the limit. If true, any mix designed to hit 0.1 at acceptance has
-already failed on the drawing board. We have not yet confirmed this against a primary source. `[unverified]`
+already failed on the drawing board. We have not yet confirmed this against a primary source. <span class="badge badge--unverified">unverified</span>
 
 ## So what
 

@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="wrap prose">
+  <header class="posthead">
+    <p class="posthead__meta">
+      {% if page.category %}<span class="chip">{{ page.category }}</span>{% endif %}
+      {% if page.grade %}<span class="chip chip--quiet">{{ page.grade }}</span>{% endif %}
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y년 %-m월 %-d일" }}</time>
+    </p>
+    <h1>{{ page.title }}</h1>
+    {% if page.excerpt_text %}<p class="posthead__lede">{{ page.excerpt_text }}</p>{% endif %}
+  </header>
+  {{ content }}
+</article>

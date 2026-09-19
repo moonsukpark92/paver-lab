@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="wrap">
+    <p class="hero__eyebrow">투수블록 · 기능성 콘크리트 블록 공개 연구노트</p>
+    <h1 class="hero__title">콘크리트 보도블록을<br>값과 조건으로 적는다</h1>
+    <div class="hero__body">{{ content }}</div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2 class="seclabel" id="notes">연구노트</h2>
+  <ol class="notes" aria-labelledby="notes">
+    {%- for post in site.posts -%}
+    <li class="note">
+      <p class="note__meta">
+        {% if post.category %}<span class="chip">{{ post.category }}</span>{% endif %}
+        {% if post.grade %}<span class="chip chip--quiet">{{ post.grade }}</span>{% endif %}
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+      </p>
+      <h3 class="note__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      {% if post.excerpt_text %}<p class="note__lede">{{ post.excerpt_text }}</p>{% endif %}
+    </li>
+    {%- endfor -%}
+  </ol>
+</section>
+
+<section class="wrap fields">
+  <h2 class="seclabel">분야</h2>
+  <ul class="fieldlist">
+    <li><b>투수·배수</b><span>투수계수, 막힘, 지속성 등급</span></li>
+    <li><b>공기정화·기능성</b><span>광촉매, NOx, 축광·차열</span></li>
+    <li><b>배합·재료</b><span>공극률과 강도, 골재 입도, 백화</span></li>
+    <li><b>성형·설비</b><span>진동가압, 피드박스, 2층 성형</span></li>
+    <li><b>양생·품질</b><span>양생 조건, 시험성적서, 동결융해</span></li>
+    <li><b>시공·유지관리</b><span>노상 침투율, 줄눈, 흡입청소</span></li>
+  </ul>
+</section>
