@@ -1,0 +1,41 @@
+# 용어 사전 — 한국어 원본 ↔ 영문 고정 역어
+# 영문판 번역이 흔들리면 여기를 고친다. 기계번역이 임의로 바꾸지 못하게 하는 잠금장치다.
+version: 1
+terms:
+  투수블록:        {en: permeable paver, alt_no: [water-permeable block], note: 제품 단위}
+  투수성 포장:      {en: permeable pavement}
+  배수성 포장:      {en: drainage pavement, note: 표층만 물을 통과시키고 하부에서 횡배수. 투수성과 다르다}
+  인터로킹 블록:    {en: interlocking concrete paver (ICP)}
+  투수 인터로킹 포장: {en: permeable interlocking concrete pavement (PICP)}
+  투수계수:        {en: coefficient of permeability, unit: mm/s}
+  침투율:          {en: infiltration rate, unit: mm/h, note: ASTM C1701 은 침투율, KS 는 투수계수 — 단위가 다르다}
+  투수 지속성:      {en: permeability durability, note: 오염 후 성능. 서울시 등급제의 축}
+  막힘:            {en: clogging}
+  공극률:          {en: porosity, unit: "%"}
+  연속공극:        {en: connected(effective) porosity, note: 물이 실제로 지나는 공극. 총공극률과 구분할 것}
+  휨강도:          {en: flexural strength, unit: MPa}
+  압축강도:        {en: compressive strength, unit: MPa}
+  흡수율:          {en: water absorption, unit: "%"}
+  표층/유색층:      {en: face mix layer}
+  기층부:          {en: base mix layer}
+  베이스믹스:       {en: base mix}
+  페이스믹스:       {en: face mix}
+  반건식 콘크리트:   {en: zero-slump concrete}
+  진동가압 성형:     {en: vibro-compaction forming}
+  블록머신:         {en: block machine / paver production machine}
+  피드박스:         {en: feed box}
+  즉시탈형:         {en: instant demolding}
+  팔레트:          {en: production pallet}
+  양생실:          {en: curing chamber}
+  쇼트블라스트:      {en: shot blasting}
+  워싱:            {en: washing (exposed aggregate finish)}
+  백화:            {en: efflorescence}
+  줄눈:            {en: joint}
+  줄눈채움재:       {en: joint filling aggregate}
+  노상:            {en: subgrade}
+  보조기층:         {en: subbase}
+  안정층/모래층:     {en: bedding layer}
+  생태면적률:       {en: biotope area ratio}
+  저영향개발:       {en: low impact development (LID)}
+  광촉매:          {en: photocatalyst}
+  순환골재:         {en: recycled aggregate}

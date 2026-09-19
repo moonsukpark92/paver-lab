@@ -1,0 +1,139 @@
+# 표준 원장 — 콘크리트 보도블록 연구소
+#
+# 규칙: verified: true 는 "원문(표준 전문 또는 발행기관 PDF)을 직접 읽고 옮겨 적었다"는 뜻이다.
+# 2차 인용(뉴스·요약·검색결과)에서 온 값은 전부 verified: false 다. 값이 맞아 보여도 마찬가지다.
+# 글에 쓸 때 verified:false 값은 반드시 [미검증] 태그를 달고 출처를 밝힌다.
+#
+# 수집: 2026-09-19 (구축 모드 1회차)
+
+version: 1
+collected_at: 2026-09-19
+
+standards:
+  # ---------------------------------------------------------------- 국내
+  - id: KS_F_4419
+    title: 보차도용 콘크리트 인터로킹 블록
+    body: 한국산업표준(KS)
+    status: 2021 확인
+    source: https://www.kssn.net/search/stddetail.do?itemNo=K001010134125
+    access: 유료(한국표준정보망). 전문 미확보.
+    verified: false
+    values:
+      - key: 휨강도_보도용
+        value: 4.0
+        unit: MPa
+        note: 서울시 건설공사 품질시험 안내 기준에서 인용
+        source: https://news.seoul.go.kr/citybuild/archives/205551
+        verified: false
+      - key: 투수계수_최소
+        value: 0.1
+        unit: mm/s
+        note: 시료 3개를 1분 이상 간격으로 시험한 값의 평균
+        verified: false
+      - key: 유색층_두께_최소
+        value: 8
+        unit: mm
+        note: 유색층이 있는 경우. 휨강도 시험 후 유색층 분리가 없어야 함
+        verified: false
+      - key: 휨강도_보차도용_판석
+        value: 5.0
+        unit: MPa
+        note: 시료 치수 때문에 휨시험 불가 시 압축강도 80.0 MPa 이상으로 갈음
+        verified: false
+    검사항목:
+      보통블록: [겉모양·치수, 휨강도, 흡수율, 유색층 두께]
+      투수블록: [겉모양·치수, 휨강도, 투수계수, 유색층 두께]
+    open_question: "'1종/2종/3종' 구분은 KS 본문이 아니라 서울시 등급제일 가능성이 높다. 전문 확인 필요."
+
+  - id: SEOUL_투수블록포장기준
+    title: 서울시 투수블록포장 설계·시공 및 유지관리 기준
+    body: 서울특별시
+    legal_base: 서울특별시 물순환 회복 및 저영향 개발 기본조례
+    verified: false
+    values:
+      - key: 투수지속성_최저등급
+        value: 3등급
+        note: 원칙적으로 투수 지속성 3등급 이상만 사용. 등급 외 제품 사용 불가
+        verified: false
+      - key: 청소주기
+        value: 연 2회 (3월, 6월)
+        note: 진공 고압흡입청소 권장
+        verified: false
+      - key: 준공시_투수계수_권장
+        value: 1.0
+        unit: mm/s
+        note: 기준(0.1)이 아니라, 경년 후에도 기준을 지키려면 준공 시 이 값 이상이어야 한다는 지적
+        verified: false
+    key_point: |
+      지속성 검증시험은 시료를 협잡물로 오염시킨 뒤 투수계수를 잰다.
+      즉 제도의 판단 기준이 "새 제품 성능"이 아니라 "더러워진 뒤 성능"이다.
+      → 블로그 1번 아이템 후보.
+
+  - id: MOLIT_투수블록포장기준개선연구
+    title: 투수블록포장 기준 개선 연구
+    body: 국토교통부 / 국토교통과학기술진흥원 (CODIL)
+    source: https://www.codil.or.kr/filebank/original/RK/OTKCRK190199/OTKCRK190199.pdf
+    verified: false
+    fetch_status: 실패 — TLS 인증서 검증 오류(2026-09-19). 수동 내려받기 필요.
+
+  - id: K_SWIFT
+    title: 현장 투수성능 간이시험(K-SWIFT)
+    body: 서울기술연구원 / 서울특별시
+    verified: false
+    method: 물 3 L 를 일정 높이에서 흘려보내고 젖은 범위를 측정
+    criterion: 유지관리 후 최소 투수계수 0.1 mm/s 이상 확보
+    note: 2025년 '투수블록 투수성능 유지관리 용역(집중관리지역)'에 적용
+
+  # ---------------------------------------------------------------- 국외
+  - id: ASTM_C936
+    title: Standard Specification for Solid Concrete Interlocking Paving Units
+    body: ASTM
+    verified: false
+    values:
+      - key: 압축강도_최소
+        value: 8000
+        unit: psi
+        si: 55.2 MPa
+        verified: false
+    note: PICP 용 블록도 불투수 블록과 같은 C936 을 쓴다. 제조사 인증은 직전 12개월 내 시험 필요.
+
+  - id: ASTM_C1701
+    title: Standard Test Method for Infiltration Rate of In Place Pervious Concrete
+    body: ASTM
+    verified: false
+    note: 단일 링 침투계. PICP·콘크리트 그리드·포러스 콘크리트 표면 침투율 측정에 쓰인다. 한국의 K-SWIFT 와 비교 대상.
+
+  - id: ASTM_D3385
+    title: Infiltration Rate of Soils in Field Using Double-Ring Infiltrometer
+    body: ASTM
+    verified: false
+    note: 노상(subgrade) 침투율. 표층이 아니라 바닥이 물을 받아주는지 보는 시험.
+
+  - id: ASCE_68_18
+    title: Permeable Interlocking Concrete Pavement (ASCE/T&DI/ICPI 68-18)
+    body: ASCE / T&DI / ICPI
+    source: https://ascelibrary.org/doi/book/10.1061/9780784415009
+    verified: false
+    scope: [용어, 구조설계(차량하중), 수문설계, 시공·검사, 표준시방, 유지관리]
+    note: 실대형 재하시험을 보조기층 두께표로 번역해 놓은 것이 핵심. 국내 기준에 없는 부분.
+
+  - id: ISO_22197_1
+    title: Test method for air-purification performance of semiconducting photocatalytic materials — Part 1 Removal of nitric oxide
+    body: ISO
+    verified: false
+    note: 공기정화 블록의 NOx 제거 성능은 이 시험으로 잰다. ASTM 에는 광촉매 포장 표준이 없다.
+
+  - id: SPS_F_KSPIC_001_2006
+    title: 보도용 포장재 단체표준(문헌 인용)
+    verified: false
+    note: TiO2 코팅 투수콘크리트 연구에서 보도 품질기준 근거로 인용됨. 실체 확인 필요.
+
+conflicts:
+  - topic: 투수계수 기준
+    a: "KS/서울시 준공 기준 0.1 mm/s"
+    b: "경년 유지를 위해 준공 시 1.0 mm/s 필요하다는 현장·연구 지적"
+    resolution: 미정 — 대표 판단 필요. 두 값을 모두 제시하는 글로 쓰는 것이 정직하다.
+  - topic: 광촉매 블록 성능
+    a: "실험실 NOx 제거율 73~77.5%"
+    b: "실규모 현장(안트베르펜 1만 m2, 일본 5만 m2+) 도로변 NOx 저감 15~20%"
+    resolution: 둘 다 사실이며 조건이 다르다. 실험실값을 현장값처럼 쓰지 않는다.

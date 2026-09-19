@@ -1,0 +1,29 @@
+title: 콘크리트 보도블록 연구소
+tagline: Paver Lab — 투수블록·기능성 콘크리트 블록을 근거와 수치로
+description: >-
+  투수블록과 기능성 콘크리트 보도블록의 재료·배합·성형설비·양생·시험·시공·유지관리를
+  표준과 문헌에 근거해 공개하는 연구노트. 30년 제조 현장의 기술을 값과 조건과 함께 적는다.
+author: 박문석
+lang: ko
+baseurl: "/paver-lab"
+url: "https://moonsukpark92.github.io"
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+permalink: /:year/:month/:day/:title/
+timezone: Asia/Seoul
+
+defaults:
+  - scope: {path: "", type: posts}
+    values: {layout: post}
+
+header_pages:
+  - about.md
+  - standards.md
+  - en/index.md
+
+exclude: [README.md, Gemfile, Gemfile.lock]
