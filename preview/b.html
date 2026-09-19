@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>시안 B · 학술 저널</title>
+<meta name="theme-color" content="#fdfdfb">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  color-scheme:light;
+  --paper:#fdfdfb; --ink:#0e0e0d; --ink2:#3f4240; --mute:#83867f;
+  --rule:#dedbd2; --hair:#eceae2; --wash:#f5f4ee;
+  --red:#9b1b30; --redBg:#fbeef0; --green:#1f5d4c;
+  --serif:"Gowun Batang",serif;
+  --sans:"Pretendard Variable",Pretendard,-apple-system,system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  color-scheme:dark;
+  --paper:#111110; --ink:#f0efe9; --ink2:#c2c1ba; --mute:#8b8d86;
+  --rule:#2b2b28; --hair:#1e1e1c; --wash:#191917;
+  --red:#e78a99; --redBg:#2b1418; --green:#6fc3a9;
+}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:17px;line-height:1.9;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+a{color:var(--red);text-underline-offset:.22em}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.wrap{width:min(100% - 2.5rem,44rem);margin-inline:auto}
+
+/* 저널 머리 */
+.top{border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  min-height:3.5rem;flex-wrap:wrap}
+.logo{font-family:var(--serif);font-weight:700;font-size:1.05rem;letter-spacing:-.02em}
+.logo em{font-style:normal;color:var(--red)}
+.issn{font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;color:var(--mute);text-transform:uppercase}
+
+/* 표제 */
+header.art{padding-block:4rem 2.5rem}
+.kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--red);margin:0 0 1.4rem;display:flex;align-items:center;gap:.7rem}
+.kicker::after{content:"";height:1px;background:var(--rule);flex:1}
+h1{font-family:var(--serif);font-weight:700;margin:0;
+  font-size:clamp(2rem,1.1rem+4vw,3.4rem);line-height:1.32;letter-spacing:-.025em;text-wrap:balance}
+.lede{font-family:var(--serif);font-size:1.18rem;line-height:1.85;color:var(--ink2);
+  margin:1.5rem 0 0;padding-left:1.1rem;border-left:2px solid var(--red)}
+.byline{margin:2rem 0 0;padding-top:1.1rem;border-top:1px solid var(--hair);
+  font-size:.82rem;color:var(--mute);display:flex;gap:1.25rem;flex-wrap:wrap;
+  font-variant-numeric:tabular-nums}
+.byline b{color:var(--ink2);font-weight:600}
+
+/* 본문 */
+article{padding-bottom:5rem}
+article h2{font-family:var(--serif);font-weight:700;font-size:1.55rem;line-height:1.5;
+  letter-spacing:-.02em;margin:3.5rem 0 1.1rem;scroll-margin-top:4rem}
+article h2 .n{font-family:var(--mono);font-size:.7rem;font-weight:400;color:var(--red);
+  display:block;letter-spacing:.16em;margin-bottom:.5rem}
+article p{margin:0 0 1.3rem;color:var(--ink2)}
+article strong{color:var(--ink);font-weight:650}
+.drop::first-letter{font-family:var(--serif);font-size:3.3rem;float:left;line-height:.9;
+  padding:.28rem .5rem .1rem 0;color:var(--ink)}
+
+/* 곁주 — 넓은 화면에서 본문 옆으로 */
+.aside{font-size:.83rem;line-height:1.7;color:var(--mute);border-left:1px solid var(--rule);
+  padding-left:.9rem;margin:0 0 1.3rem}
+@media (min-width:1100px){
+  .wrap{width:min(100% - 3rem,44rem)}
+  .aside{position:absolute;left:calc(50% + 23rem);width:15rem;border-left:1px solid var(--rule);margin-top:-.4rem}
+  article{position:relative}
+}
+
+/* 도표 = 저널의 Figure */
+figure{margin:2.25rem 0;padding:0}
+figcaption{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--mute);margin-bottom:.7rem}
+figcaption b{color:var(--red);font-weight:500}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:max-content;min-width:100%;font-size:.88rem;
+  font-variant-numeric:tabular-nums;line-height:1.6}
+thead th{text-align:left;font-weight:600;color:var(--ink);padding:.5rem .85rem .5rem 0;
+  border-bottom:1.5px solid var(--ink);white-space:nowrap;font-size:.78rem;letter-spacing:.02em}
+td{padding:.65rem .85rem .65rem 0;border-bottom:1px solid var(--hair);color:var(--ink2);vertical-align:top}
+tbody tr:last-child td{border-bottom:1px solid var(--rule)}
+td.v{font-family:var(--mono);color:var(--ink);white-space:nowrap}
+.flag{font-family:var(--sans);font-size:.72rem;font-weight:600;color:var(--red);
+  background:var(--redBg);padding:.1rem .4rem;border-radius:3px;white-space:nowrap}
+
+blockquote{margin:2.5rem 0;padding:1.6rem 0;border-block:1px solid var(--rule);text-align:center}
+blockquote p{font-family:var(--serif);font-size:1.3rem;line-height:1.7;color:var(--ink);margin:0}
+ul,ol{margin:0 0 1.3rem;padding-left:1.2rem}
+li{margin-bottom:.6rem;color:var(--ink2)}
+li::marker{color:var(--red)}
+.qlist{list-style:none;padding:0;counter-reset:q}
+.qlist li{counter-increment:q;padding-left:2.2rem;position:relative;margin-bottom:.9rem}
+.qlist li::before{content:"Q" counter(q);position:absolute;left:0;top:.15rem;
+  font-family:var(--mono);font-size:.72rem;color:var(--red);letter-spacing:.06em}
+.refs{background:var(--wash);padding:1.4rem 1.5rem;border-radius:2px;font-size:.84rem;color:var(--mute);margin-top:3rem}
+.refs h3{margin:0 0 .7rem;font-size:.7rem;font-family:var(--mono);letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink2)}
+.refs p{margin:0 0 .4rem;color:var(--mute)}
+.ribbon{position:fixed;left:0;bottom:0;background:var(--red);color:#fff;
+  font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;padding:.45rem .8rem;z-index:9}
+</style>
+</head>
+<body>
+<div class="ribbon">시안 B · 학술 저널</div>
+
+<div class="top"><div class="wrap">
+  <div class="logo">콘크리트 보도블록 <em>연구소</em></div>
+  <div class="issn">Paver Lab · Vol.1 No.1 · 2026</div>
+</div></div>
+
+<div class="wrap">
+  <header class="art">
+    <p class="kicker">투수 · 배수 / 연구노트</p>
+    <h1>투수 지속성 등급제는 새 블록이 아니라 더러운 블록을 시험한다</h1>
+    <p class="lede">준공 성적서는 멀쩡한데 2년 뒤 물이 고인다. 제도는 이미 시험의 축을 바꿨는데, 현장은 아직 준공값만 본다.</p>
+    <p class="byline"><span>박문석 · <b>데코페이브</b></span><span>2026년 9월 20일</span><span>근거 <b>3</b>건 · 미검증 <b>6</b>건</span></p>
+  </header>
+
+  <article>
+    <h2><span class="n">01 — 현상</span>성적서는 2년 뒤를 재지 않았다</h2>
+    <p class="drop">준공 검사를 통과한 투수블록 보도에서, 2년쯤 지나 비가 오면 물이 고입니다. 성적서를 다시 꺼내 보면 아무 문제가 없습니다. 투수계수 기준치를 넘겼고, 도장도 찍혀 있습니다.</p>
+    <p>성적서가 거짓이어서가 아닙니다. <strong>성적서가 잰 것이 그 블록의 2년 뒤가 아니기 때문</strong>입니다.</p>
+
+    <h2><span class="n">02 — 원리</span>잃는 것은 강도가 아니라 길이다</h2>
+    <p>투수계수 시험은 공장에서 갓 나온 깨끗한 시료로 잽니다. 공극이 비어 있으니 당연히 물이 지나갑니다. 실제 도로에 깔린 블록의 공극은 비어 있지 않습니다. 흙, 타이어 마모분, 부서진 낙엽, 겨울 제설재 잔여물이 들어가 앉습니다.</p>
+    <p class="aside">총공극률이 같아도 투수계수는 달라진다. 물은 이어진 길로만 가기 때문이다. 배합에서 관리해야 할 값은 공극의 <em>양</em>이 아니라 <em>연결성</em>이다.</p>
+    <p>물이 지나갈 <strong>이어진 공극</strong>이 끊기면, 총공극률이 그대로여도 투수계수는 떨어집니다. 그래서 서울시 제도는 시험의 축을 옮겼습니다 — 지속성 검증시험은 시료를 협잡물로 오염시킨 뒤 투수계수를 잽니다.</p>
+
+    <h2><span class="n">03 — 수치</span>기준값 대조표</h2>
+    <figure>
+      <figcaption>표 1 · 투수블록 품질기준과 <b>원문 대조 상태</b></figcaption>
+      <div class="tablewrap"><table>
+        <thead><tr><th>항목</th><th>값</th><th>근거</th><th>확인</th></tr></thead>
+        <tbody>
+          <tr><td>준공 시 투수계수</td><td class="v">≥ 0.1 mm/s</td><td>KS F 4419</td><td><span class="flag">미검증</span></td></tr>
+          <tr><td>휨강도 (보도용)</td><td class="v">≥ 4.0 MPa</td><td>KS F 4419</td><td><span class="flag">미검증</span></td></tr>
+          <tr><td>유색층 두께</td><td class="v">≥ 8 mm</td><td>KS F 4419</td><td><span class="flag">미검증</span></td></tr>
+          <tr><td>투수 지속성</td><td class="v">3등급 이상</td><td>서울시 기준</td><td><span class="flag">미검증</span></td></tr>
+          <tr><td>청소 주기</td><td class="v">연 2회 (3·6월)</td><td>서울시 유지관리</td><td><span class="flag">미검증</span></td></tr>
+          <tr><td>유지관리 후 현장</td><td class="v">≥ 0.1 mm/s</td><td>K-SWIFT</td><td><span class="flag">미검증</span></td></tr>
+        </tbody>
+      </table></div>
+    </figure>
+
+    <blockquote><p>기준의 열 배로 만들어야<br>기준을 지킨다</p></blockquote>
+    <p>준공 기준은 0.1 mm/s 인데, 경년 후에도 그 0.1을 지키려면 준공 시 <strong>1.0 mm/s 이상</strong>이어야 한다는 지적이 있습니다. 사실이라면 준공값 0.1을 목표로 배합을 설계한 제품은 설계 단계에서 이미 실패가 예정돼 있습니다.</p>
+
+    <h2><span class="n">04 — 판단</span>세 사람이 각각 바꿀 것</h2>
+    <ul>
+      <li><strong>발주자</strong> — 성적서에 '투수계수'만 있는지, '투수 지속성 등급'이 함께 있는지 보십시오.</li>
+      <li><strong>제조자</strong> — 목표를 준공값이 아니라 오염 후 값으로 잡아야 합니다.</li>
+      <li><strong>설계자</strong> — 청소 주기를 시방에 넣으십시오. 유지관리 예산이 없는 투수포장은 불투수포장의 비싼 버전입니다.</li>
+    </ul>
+
+    <h2><span class="n">05 — 남은 질문</span>아직 모르는 것</h2>
+    <ol class="qlist">
+      <li>협잡물 조성과 오염 절차가 실제 도로 먼지와 얼마나 닮았는가</li>
+      <li>등급 1·2·3의 정량 경계값은 얼마인가</li>
+      <li>"준공 1.0 mm/s" 주장의 원 출처와 산출 근거는 무엇인가</li>
+      <li>연 2회 청소로 회복되는 투수계수는 얼마인가</li>
+    </ol>
+
+    <div class="refs">
+      <h3>출처</h3>
+      <p>[1] 서울특별시, 「품질시험: 재료분야」</p>
+      <p>[2] 서울특별시 「투수블록포장 설계·시공 및 유지관리 기준」 (2차 인용)</p>
+      <p>[3] 환경일보, 「KS인증 투수블록, 6개월만 지나면 무용지물」 — 업계 인식의 증거로만 인용</p>
+    </div>
+  </article>
+</div>
+</body></html>

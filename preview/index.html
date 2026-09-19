@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>디자인 시안 비교</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{color-scheme:light;--bg:#f6f6f4;--ink:#14161a;--mute:#6b7280;--card:#fff;--rule:#e3e1db}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#0f1113;--ink:#e9ebee;--mute:#949ba4;--card:#171a1e;--rule:#262b30}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard Variable",Pretendard,system-ui,sans-serif;line-height:1.8;word-break:keep-all}
+.w{width:min(100% - 2rem,46rem);margin:0 auto;padding-block:3.5rem 5rem}
+h1{font-size:1.9rem;letter-spacing:-.035em;margin:0 0 .6rem;text-wrap:balance}
+.sub{color:var(--mute);margin:0 0 2.5rem;font-size:1rem}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr))}
+a.card{display:block;background:var(--card);border:1px solid var(--rule);border-radius:10px;
+  padding:1.4rem 1.5rem;text-decoration:none;color:inherit}
+a.card:hover{border-color:var(--ink)}
+.tag{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.card h2{margin:.5rem 0 .5rem;font-size:1.2rem;letter-spacing:-.025em}
+.card p{margin:0;color:var(--mute);font-size:.92rem}
+.note{margin-top:2.5rem;font-size:.9rem;color:var(--mute);border-top:1px solid var(--rule);padding-top:1.5rem}
+</style></head><body><div class="w">
+<h1>어느 쪽으로 갈까요</h1>
+<p class="sub">같은 글, 같은 표, 다른 세계관. 폰에서 열어 보시고 번호만 주십시오.</p>
+<div class="grid">
+  <a class="card" href="a.html"><span class="tag">시안 A</span><h2>제도 도면</h2>
+  <p>표제란·치수선·모노스페이스. 표가 회계장부처럼 읽힙니다. 제조자와 발주처가 신뢰하는 얼굴.</p></a>
+  <a class="card" href="b.html"><span class="tag">시안 B</span><h2>학술 저널</h2>
+  <p>명조 제목·곁주·Figure 번호. 읽는 맛이 있고 인용하기 좋습니다. 밖으로 퍼지는 얼굴.</p></a>
+</div>
+<p class="note">둘 다 다크모드·폰 대응입니다. 섞어도 됩니다 — 예: A의 표 + B의 제목.</p>
+</div></body></html>
