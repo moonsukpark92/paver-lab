@@ -6,6 +6,8 @@ lang: ko
 excerpt: "준공 성적서는 멀쩡한데 2년 뒤 물이 고인다. 제도는 이미 시험의 축을 바꿨는데, 현장은 아직 준공값만 본다."
 ---
 
+*English: [Permeability durability grading tests the dirty paver, not the new one]({{ site.baseurl }}/en/permeability-durability-grade/)*
+
 ## 현상
 
 준공 검사를 통과한 투수블록 보도에서, 2년쯤 지나 비가 오면 물이 고입니다.

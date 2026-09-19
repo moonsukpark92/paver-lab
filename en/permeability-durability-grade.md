@@ -4,7 +4,7 @@ title: "Permeability durability grading tests the dirty paver, not the new one"
 permalink: /en/permeability-durability-grade/
 ---
 
-*Korean original: [투수 지속성 등급제는 새 블록이 아니라 더러운 블록을 시험한다]({{ site.baseurl }}/2026/09/20/투수-지속성-등급제는-새-블록이-아니라-더러운-블록을-시험한다/)*
+*Korean original: [투수 지속성 등급제는 새 블록이 아니라 더러운 블록을 시험한다]({{ site.baseurl }}/2026/09/20/permeability-durability-grade/)*
 
 ## What you see
 
