@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" role="img"
+     aria-labelledby="t d" width="880" height="560">
+  <title id="t">투수성능 지속성 검증시험 4단계 도해</title>
+  <desc id="d">1 시료 고정과 수평 맞춤, 2 건조 협잡물 도포 후 60헤르츠 30초 진동, 3 물을 부어 희석된 협잡물 침투 60헤르츠 30초 진동과 교반, 4 물 빠짐 대기 3분 초과 시 종료, 표면 협잡물 제거 후 수위차 일정 상태로 투수계수 측정.</desc>
+  <style>
+    .bg{fill:#fdfdfb}.ink{fill:#0e0e0d}.sub{fill:#5d6360}.rule{stroke:#dedbd2;fill:none}
+    .blk{fill:#cfcabd}.pore{fill:#fdfdfb}.grit{fill:#6b6257}.water{fill:#9fc4d8}
+    .acc{fill:#9b1b30}.accs{stroke:#9b1b30;fill:none}
+    .n{font:700 30px Gowun Batang,serif;fill:#9b1b30}
+    .h{font:650 15px Pretendard,system-ui,sans-serif;fill:#0e0e0d}
+    .s{font:400 12.5px Pretendard,system-ui,sans-serif;fill:#5d6360}
+    .m{font:500 11.5px IBM Plex Mono,monospace;fill:#9b1b30}
+    @media (prefers-color-scheme:dark){
+      .bg{fill:#111110}.ink{fill:#f0efe9}.sub{fill:#a8aaa3}.rule{stroke:#2b2b28}
+      .blk{fill:#4a463f}.pore{fill:#111110}.grit{fill:#c9bfae}.water{fill:#4a7d99}
+      .h{fill:#f0efe9}.s{fill:#a8aaa3}
+    }
+  </style>
+  <rect class="bg" width="880" height="560"/>
+
+  <!-- 1 -->
+  <g transform="translate(24,26)">
+    <text class="n" x="0" y="26">1</text>
+    <text class="h" x="40" y="16">시료를 거푸기에 수밀하게 고정</text>
+    <text class="s" x="40" y="38">거푸기를 시험기 테이블에 고정하고 테이블 수평을 맞춘다.</text>
+    <text class="s" x="40" y="56">물이 블록 이외의 길로 새면 그 시험은 무의미하다.</text>
+    <g transform="translate(600,0)">
+      <rect class="rule" x="0" y="4" width="200" height="58" rx="3"/>
+      <rect class="blk" x="26" y="18" width="148" height="30" rx="2"/>
+      <g class="pore"><circle cx="46" cy="33" r="3"/><circle cx="74" cy="33" r="3"/><circle cx="102" cy="33" r="3"/><circle cx="130" cy="33" r="3"/><circle cx="156" cy="33" r="3"/></g>
+      <path class="accs" d="M10 62 h180" stroke-width="2"/>
+      <text class="m" x="10" y="78">수평</text>
+    </g>
+  </g>
+  <line class="rule" x1="24" y1="118" x2="856" y2="118"/>
+
+  <!-- 2 -->
+  <g transform="translate(24,142)">
+    <text class="n" x="0" y="26">2</text>
+    <text class="h" x="40" y="16">건조한 협잡물을 뿌리고 <tspan class="acc">60 Hz · 30초</tspan> 떤다</text>
+    <text class="s" x="40" y="38">정해진 양을 고르게 도포한 뒤 진동발생기로 공극에 밀어 넣는다.</text>
+    <text class="s" x="40" y="56">물 없이 먼저 떠는 것 — 마른 먼지가 스스로 파고드는 상태를 만든다.</text>
+    <g transform="translate(600,0)">
+      <rect class="rule" x="0" y="4" width="200" height="58" rx="3"/>
+      <rect class="blk" x="26" y="26" width="148" height="30" rx="2"/>
+      <g class="grit"><circle cx="40" cy="18" r="2"/><circle cx="62" cy="14" r="2"/><circle cx="88" cy="18" r="2"/><circle cx="112" cy="13" r="2"/><circle cx="138" cy="17" r="2"/><circle cx="160" cy="14" r="2"/>
+        <circle cx="48" cy="34" r="2"/><circle cx="104" cy="34" r="2"/><circle cx="150" cy="35" r="2"/></g>
+      <path class="accs" d="M14 46 q6 -7 12 0 q6 7 12 0" stroke-width="1.6"/>
+      <path class="accs" d="M162 46 q6 -7 12 0 q6 7 12 0" stroke-width="1.6"/>
+    </g>
+  </g>
+  <line class="rule" x1="24" y1="234" x2="856" y2="234"/>
+
+  <!-- 3 -->
+  <g transform="translate(24,258)">
+    <text class="n" x="0" y="26">3</text>
+    <text class="h" x="40" y="16">물을 붓고 다시 <tspan class="acc">60 Hz · 30초</tspan> 떤다</text>
+    <text class="s" x="40" y="38">정해진 양의 물을 쏟아 희석된 협잡물을 공극으로 침투시키고,</text>
+    <text class="s" x="40" y="56">뭉치지 않게 막대로 젓는다. 빗물이 먼지를 끌고 들어가는 상태다.</text>
+    <g transform="translate(600,0)">
+      <rect class="rule" x="0" y="4" width="200" height="58" rx="3"/>
+      <rect class="water" x="26" y="12" width="148" height="16" opacity=".75"/>
+      <rect class="blk" x="26" y="28" width="148" height="30" rx="2"/>
+      <g class="grit" opacity=".9"><circle cx="52" cy="38" r="2.2"/><circle cx="84" cy="42" r="2.2"/><circle cx="116" cy="37" r="2.2"/><circle cx="146" cy="43" r="2.2"/></g>
+      <path class="accs" d="M96 6 v10" stroke-width="2" marker-end="url(#a)"/>
+      <defs><marker id="a" markerWidth="7" markerHeight="7" refX="3" refY="5" orient="auto">
+        <path d="M0 0 L3 6 L6 0 Z" fill="#9b1b30"/></marker></defs>
+    </g>
+  </g>
+  <line class="rule" x1="24" y1="350" x2="856" y2="350"/>
+
+  <!-- 4 -->
+  <g transform="translate(24,374)">
+    <text class="n" x="0" y="26">4</text>
+    <text class="h" x="40" y="16">물이 빠지길 기다린다 — <tspan class="acc">3분을 넘기면 종료</tspan></text>
+    <text class="s" x="40" y="38">3분 초과 시 투수성능이 없는 것으로 간주한다. 등급을 매기기 전의 관문이다.</text>
+    <text class="s" x="40" y="56">탈형해 <tspan class="ink" font-weight="650">표면에 남은 협잡물을 제거한 뒤</tspan>, 수위차를 일정하게 유지하며 투수계수를 잰다.</text>
+    <text class="s" x="40" y="74">공극 안으로 들어간 것만 손실로 남는다 — 이 시험이 재는 것은 그 손실이다.</text>
+    <g transform="translate(600,0)">
+      <rect class="rule" x="0" y="4" width="200" height="72" rx="3"/>
+      <rect class="blk" x="26" y="26" width="148" height="30" rx="2"/>
+      <g class="grit"><circle cx="58" cy="40" r="2.2"/><circle cx="96" cy="44" r="2.2"/><circle cx="134" cy="39" r="2.2"/></g>
+      <path class="accs" d="M96 58 v12" stroke-width="2" marker-end="url(#a)"/>
+      <text class="m" x="10" y="20">3:00</text>
+      <path class="accs" d="M150 14 h34" stroke-width="1.4" stroke-dasharray="3 3"/>
+      <text class="m" x="150" y="10">수위차</text>
+    </g>
+  </g>
+  <text class="s" x="24" y="548">서울특별시 「투수성능 지속성 검증시험」 절차를 옮겨 직접 그린 도해 · 콘크리트 보도블록 연구소</text>
+</svg>
