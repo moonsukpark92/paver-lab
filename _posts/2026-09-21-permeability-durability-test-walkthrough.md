@@ -3,7 +3,6 @@ title: "협잡물을 뿌리고 30초를 떤다 — 투수 지속성 시험을 �
 category: 투수·배수
 grade: 기술해설
 lang: ko
-published: false   # 대표 승인 전. 날짜가 지나도 저절로 공개되지 않는다.
 series: "투수 지속성 ①"
 verified: 4
 unverified: 1
