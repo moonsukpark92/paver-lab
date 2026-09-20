@@ -29,7 +29,10 @@
     </div>
   </header>
 
-  <main id="main">{{ content }}</main>
+  <div class="shell">
+    {%- include sidebar.html -%}
+    <main id="main" class="main">{{ content }}</main>
+  </div>
 
   <footer class="foot">
     <div class="wrap">

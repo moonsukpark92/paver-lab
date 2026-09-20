@@ -2,14 +2,14 @@
 layout: default
 ---
 <section class="hero">
-  <div class="wrap">
+  <div class="hero__in">
     <p class="hero__eyebrow">투수블록 · 기능성 콘크리트 블록 공개 연구노트</p>
     <h1 class="hero__title">콘크리트 보도블록을<br>값과 조건으로 적는다</h1>
     <div class="hero__body">{{ content }}</div>
   </div>
 </section>
 
-<section class="wrap">
+<section>
   <h2 class="seclabel" id="notes">연구노트</h2>
   <ol class="notes" aria-labelledby="notes">
     {%- for post in site.posts -%}
@@ -26,7 +26,7 @@ layout: default
   </ol>
 </section>
 
-<section class="wrap fields">
+<section class="fields">
   <h2 class="seclabel">분야</h2>
   <ul class="fieldlist">
     <li><b>투수·배수</b><span>투수계수, 막힘, 지속성 등급</span></li>

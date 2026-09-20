@@ -22,7 +22,63 @@ html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
   font-size:17px;line-height:1.9;word-break:keep-all;overflow-wrap:break-word;
   -webkit-font-smoothing:antialiased}
-.wrap{width:min(100% - 2.5rem,var(--measure));margin-inline:auto}
+.wrap{width:min(100% - 2.5rem,72rem);margin-inline:auto}
+
+/* ── 2단 골격: 좌측 메뉴 + 본문 ───────────────────────── */
+.shell{width:min(100% - 2.5rem,72rem);margin-inline:auto;display:grid;gap:2.5rem;
+  grid-template-columns:15rem minmax(0,1fr);align-items:start;padding-block:2.5rem 0}
+.main{min-width:0}
+@media (max-width:900px){
+  .shell{grid-template-columns:1fr;gap:0;padding-top:1.5rem}
+  .side{order:2;border-top:1px solid var(--rule);margin-top:3rem;padding-top:2rem}
+}
+.side__inner{position:sticky;top:5rem;display:flex;flex-direction:column;gap:2rem}
+@media (max-width:900px){.side__inner{position:static;gap:2.25rem}}
+
+.prof{display:flex;flex-direction:column;gap:.25rem}
+.prof__mark{width:2.6rem;height:2.6rem;border-radius:4px;margin-bottom:.6rem;
+  background:
+    radial-gradient(circle at 32% 30%,transparent 0 4px,var(--red) 4px 5.4px,transparent 5.4px),
+    radial-gradient(circle at 70% 64%,transparent 0 4px,var(--red) 4px 5.4px,transparent 5.4px),
+    linear-gradient(var(--wash),var(--wash));
+  box-shadow:inset 0 0 0 1px var(--rule)}
+.prof__name{font-family:var(--serif);font-size:1.02rem;font-weight:700;margin:0;letter-spacing:-.02em;line-height:1.4}
+.prof__en{margin:0 0 .6rem;font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--mute)}
+.prof__bio{margin:0 0 .9rem;font-size:.82rem;line-height:1.75;color:var(--mute)}
+.prof__stat{display:flex;gap:1.1rem;margin:0;padding-top:.85rem;border-top:1px solid var(--hair);
+  font-variant-numeric:tabular-nums}
+.prof__stat div{display:flex;flex-direction:column;gap:.05rem}
+.prof__stat dt{margin:0;font-size:.66rem;color:var(--mute);letter-spacing:.04em}
+.prof__stat dd{margin:0;font-size:1.05rem;font-weight:700;line-height:1;letter-spacing:-.02em}
+
+.side__h{font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--red);font-weight:400;margin:0 0 .7rem;padding-bottom:.5rem;border-bottom:1px solid var(--rule)}
+.side__sec ul{list-style:none;margin:0;padding:0}
+.cats li{display:flex;align-items:baseline;justify-content:space-between;gap:.5rem;
+  padding:.42rem 0;font-size:.86rem;border-bottom:1px solid var(--hair)}
+.cats li:last-child{border-bottom:0}
+.cats a{color:var(--ink);text-decoration:none}
+.cats a:hover{color:var(--red);text-decoration:underline}
+.cats li.is-empty span{color:var(--mute)}
+.cats em{font-style:normal;font-family:var(--mono);font-size:.72rem;color:var(--mute);
+  font-variant-numeric:tabular-nums}
+.recent li{padding:.5rem 0;border-bottom:1px solid var(--hair);display:flex;flex-direction:column;gap:.15rem}
+.recent li:last-child{border-bottom:0}
+.recent a{font-size:.84rem;line-height:1.55;color:var(--ink);text-decoration:none;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.recent a:hover{color:var(--red)}
+.recent time{font-family:var(--mono);font-size:.68rem;color:var(--mute)}
+.links li{padding:.35rem 0;font-size:.84rem}
+.links a{color:var(--ink2);text-decoration:none}
+.links a:hover{color:var(--red);text-decoration:underline}
+.side__note{margin:0;font-size:.76rem;line-height:1.7;color:var(--mute);
+  padding-top:1rem;border-top:1px solid var(--hair)}
+
+.catcount{font-family:var(--mono);font-size:.7rem;color:var(--mute);margin-left:.4rem;vertical-align:middle}
+.catempty{font-size:.85rem;color:var(--mute)}
+.notes--compact .note{padding:1.1rem 0}
+.notes--compact .note__title{font-size:1.12rem}
 a{color:var(--red);text-underline-offset:.22em;text-decoration-thickness:from-font}
 a:hover{text-decoration-thickness:2px}
 :focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:2px}
@@ -34,7 +90,7 @@ a:hover{text-decoration-thickness:2px}
 .masthead{border-bottom:1px solid var(--rule);position:sticky;top:0;z-index:10;
   background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:saturate(1.3) blur(8px)}
 .masthead__inner{display:flex;justify-content:space-between;align-items:center;gap:1rem;
-  min-height:3.5rem;flex-wrap:wrap}
+  min-height:3.25rem;flex-wrap:wrap}
 .brand{font-family:var(--serif);font-weight:700;font-size:1.05rem;letter-spacing:-.02em;
   text-decoration:none;color:var(--ink);display:flex;align-items:baseline;gap:.35rem}
 .brand em{font-style:normal;color:var(--red)}
@@ -46,7 +102,7 @@ a:hover{text-decoration-thickness:2px}
 .nav a[aria-current="page"]{color:var(--red);border-bottom-color:var(--red)}
 
 /* 첫 화면 */
-.hero{padding-block:4rem 2.5rem;border-bottom:1px solid var(--rule)}
+.hero{padding-block:0 2.5rem;border-bottom:1px solid var(--rule);max-width:var(--measure)}
 .hero__eyebrow{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
   color:var(--red);margin:0 0 1.4rem;display:flex;align-items:center;gap:.7rem}
 .hero__eyebrow::after{content:"";height:1px;background:var(--rule);flex:1}
@@ -82,7 +138,7 @@ a:hover{text-decoration-thickness:2px}
 .fieldlist span{font-size:.85rem;color:var(--mute)}
 
 /* 본문 */
-.prose{padding-block:3rem 5rem;position:relative}
+.prose{padding-block:0 5rem;position:relative;max-width:var(--measure)}
 .posthead,.pagehead{margin-bottom:2.5rem}
 .posthead h1,.pagehead h1{font-family:var(--serif);font-weight:700;margin:0;
   font-size:clamp(1.9rem,1.1rem+3.6vw,3rem);line-height:1.34;letter-spacing:-.025em;text-wrap:balance}
@@ -107,8 +163,20 @@ a:hover{text-decoration-thickness:2px}
 .prose hr{margin:3rem 0;border:0;border-top:1px solid var(--rule)}
 .prose sup a{text-decoration:none;font-size:.72em;padding:0 .1em}
 
-.prose blockquote{margin:2.5rem 0;padding:1.6rem 0;border-block:1px solid var(--rule);text-align:center}
-.prose blockquote p{font-family:var(--serif);font-size:1.28rem;line-height:1.7;color:var(--ink);margin:0}
+/* 인용은 두 종류다. 긴 원문 인용은 읽어야 하고, 풀인용은 보여야 한다.
+   둘을 같은 스타일로 두면 원문 인용이 가운데 정렬로 나와 읽을 수 없다. */
+.prose blockquote{margin:2rem 0;padding:1.1rem 0 1.1rem 1.2rem;
+  border-left:3px solid var(--rule);background:var(--wash);
+  border-radius:0 3px 3px 0;padding-right:1.2rem}
+.prose blockquote p{margin:0 0 .9rem;color:var(--ink2);font-size:.96rem;line-height:1.85}
+.prose blockquote p:last-child{margin-bottom:0}
+.prose blockquote::before{content:"원문 인용";display:block;font-family:var(--mono);
+  font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:.7rem}
+
+.prose blockquote.pull{border-left:0;border-block:1px solid var(--rule);background:none;
+  text-align:center;padding:1.6rem 0;border-radius:0}
+.prose blockquote.pull::before{content:none}
+.prose blockquote.pull p{font-family:var(--serif);font-size:1.28rem;line-height:1.7;color:var(--ink)}
 
 .prose code{font-family:var(--mono);font-size:.86em;background:var(--wash);
   padding:.1em .35em;border-radius:3px;color:var(--ink)}
@@ -132,8 +200,8 @@ a:hover{text-decoration-thickness:2px}
 /* 곁주 — 넓은 화면에서 본문 옆으로 */
 .aside{font-size:.84rem;line-height:1.75;color:var(--mute);border-left:1px solid var(--rule);
   padding-left:.9rem;margin:0 0 1.3rem}
-@media (min-width:1180px){
-  .aside{position:absolute;left:calc(50% + 23.5rem);width:15rem;margin-top:-.4rem}
+@media (min-width:1280px){
+  .aside{position:absolute;left:calc(100% + 2rem);width:13rem;margin-top:-.4rem}
 }
 
 .foot{border-top:1px solid var(--rule);padding-block:2.5rem 3.5rem;background:var(--wash)}
@@ -149,7 +217,7 @@ a:hover{text-decoration-thickness:2px}
 .prose figure img{display:block;width:100%;height:auto;border-radius:2px;background:var(--wash)}
 .prose figcaption{margin-top:.7rem;font-size:.84rem;line-height:1.7;color:var(--mute);
   border-left:2px solid var(--rule);padding-left:.8rem;max-width:var(--measure)}
-@media (min-width:1180px){.prose figure{width:min(52rem,calc(100vw - 4rem));margin-inline:calc(50% - min(26rem,calc(50vw - 2rem)))}}
+
 
 /* 코드 블록 — 계산식이 페이지를 밀어내지 않게. 표와 같은 규칙으로 가둔다.
    pre 규칙이 없어 글 페이지가 390px 화면에서 811px 로 벌어졌다(2026-09-20 실측). */

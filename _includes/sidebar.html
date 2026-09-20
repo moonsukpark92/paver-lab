@@ -1,0 +1,58 @@
+<aside class="side" aria-label="블로그 메뉴">
+  <div class="side__inner">
+
+    <section class="prof">
+      <div class="prof__mark" aria-hidden="true"></div>
+      <h2 class="prof__name">콘크리트 보도블록 연구소</h2>
+      <p class="prof__en" translate="no">Paver Lab</p>
+      <p class="prof__bio">투수블록·기능성 콘크리트 블록의 재료·성형·양생·시공을
+        표준과 시험값으로 적는 공개 연구노트. 30년 제조 현장에서 씁니다.</p>
+      <dl class="prof__stat">
+        <div><dt>글</dt><dd>{{ site.posts | size }}</dd></div>
+        <div><dt>표준</dt><dd>{{ site.data.standards.standards | size }}</dd></div>
+        <div><dt>원문 대조</dt><dd>{% assign v = 0 %}{% for s in site.data.standards.standards %}{% if s.verified %}{% assign v = v | plus: 1 %}{% endif %}{% endfor %}{{ v }}</dd></div>
+      </dl>
+    </section>
+
+    <nav class="side__sec" aria-labelledby="cat-h">
+      <h3 class="side__h" id="cat-h">카테고리</h3>
+      <ul class="cats">
+        {%- assign cats = "투수·배수,공기정화·기능성,배합·재료,성형·설비,양생·품질,시공·유지관리" | split: "," -%}
+        {%- for c in cats -%}
+          {%- assign n = 0 -%}
+          {%- for p in site.posts -%}{%- if p.category == c -%}{%- assign n = n | plus: 1 -%}{%- endif -%}{%- endfor -%}
+          <li class="{% if n == 0 %}is-empty{% endif %}">
+            {% if n > 0 %}<a href="{{ '/categories/' | relative_url }}#{{ c | slugify }}">{{ c }}</a>
+            {% else %}<span>{{ c }}</span>{% endif %}
+            <em>{{ n }}</em>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+
+    <nav class="side__sec" aria-labelledby="recent-h">
+      <h3 class="side__h" id="recent-h">최근 글</h3>
+      <ul class="recent">
+        {%- for p in site.posts limit: 5 -%}
+        <li>
+          <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+          <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%Y.%m.%d" }}</time>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+
+    <nav class="side__sec" aria-labelledby="doc-h">
+      <h3 class="side__h" id="doc-h">자료</h3>
+      <ul class="links">
+        <li><a href="{{ '/standards/' | relative_url }}">표준 원장</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">연구소에 대하여</a></li>
+        <li><a href="{{ '/en/' | relative_url }}" lang="en" translate="no">English</a></li>
+        <li><a href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+      </ul>
+    </nav>
+
+    <p class="side__note">수치에는 출처나 조건이 붙습니다.<br>
+      확인하지 못한 값은 <span class="badge badge--unverified">미검증</span>으로 남깁니다.</p>
+  </div>
+</aside>
