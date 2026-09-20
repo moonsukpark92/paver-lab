@@ -226,3 +226,25 @@ a:hover{text-decoration-thickness:2px}
   font-size:.82rem;line-height:1.7}
 .prose pre code{display:block;background:none;padding:0;white-space:pre;
   overflow-wrap:normal;word-break:normal;font-size:inherit}
+
+/* 기사 모음 */
+.pressfilter{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:2rem 0 0;
+  padding-bottom:1.25rem;border-bottom:1px solid var(--rule);font-size:.85rem}
+.pressfilter span{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--mute);margin-right:.3rem}
+.pressfilter a{text-decoration:none;color:var(--ink2);background:var(--wash);
+  border:1px solid var(--rule);border-radius:999px;padding:.2rem .65rem}
+.pressfilter a:hover{border-color:var(--red);color:var(--red)}
+.pressfilter em{font-style:normal;font-family:var(--mono);font-size:.72rem;color:var(--mute)}
+.press{list-style:none;margin:0 0 2.5rem;padding:0}
+.press li{padding:1.1rem 0;border-bottom:1px solid var(--hair)}
+.press li:last-child{border-bottom:0}
+.press__meta{display:flex;gap:.6rem;align-items:baseline;margin:0 0 .3rem;
+  font-family:var(--mono);font-size:.72rem;color:var(--mute);font-variant-numeric:tabular-nums}
+.press__outlet{color:var(--red);letter-spacing:.02em}
+.press__title{margin:0 0 .35rem;font-size:1.02rem;font-weight:650;line-height:1.55;letter-spacing:-.02em}
+.press__title a{color:var(--ink);text-decoration:none}
+.press__title a:hover{color:var(--red);text-decoration:underline}
+.press__note{margin:0;font-size:.86rem;line-height:1.7;color:var(--mute)}
+.press__foot{font-size:.8rem;color:var(--mute);border-top:1px solid var(--rule);padding-top:1rem}
+.linkn{font-style:normal;font-family:var(--mono);font-size:.7rem;color:var(--mute);margin-left:.25rem}
