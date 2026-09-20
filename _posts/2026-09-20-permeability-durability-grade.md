@@ -3,8 +3,8 @@ title: "투수 지속성 등급제는 새 블록이 아니라 더러운 블록�
 category: 투수·배수
 grade: 연구노트
 lang: ko
-verified: 8
-unverified: 4
+verified: 6
+unverified: 3
 excerpt_text: "준공 성적서는 멀쩡한데 2년 뒤 물이 고인다. 제도는 이미 시험의 축을 바꿨는데, 현장은 아직 준공값만 본다."
 ---
 

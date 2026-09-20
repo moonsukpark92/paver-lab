@@ -143,3 +143,18 @@ a:hover{text-decoration-thickness:2px}
 .foot__meta a:hover{color:var(--ink)}
 
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* 사진 — 본문보다 넓게 두되 페이지를 넘지 않는다 */
+.prose figure{margin:2.5rem 0;padding:0}
+.prose figure img{display:block;width:100%;height:auto;border-radius:2px;background:var(--wash)}
+.prose figcaption{margin-top:.7rem;font-size:.84rem;line-height:1.7;color:var(--mute);
+  border-left:2px solid var(--rule);padding-left:.8rem;max-width:var(--measure)}
+@media (min-width:1180px){.prose figure{width:min(52rem,calc(100vw - 4rem));margin-inline:calc(50% - min(26rem,calc(50vw - 2rem)))}}
+
+/* 코드 블록 — 계산식이 페이지를 밀어내지 않게. 표와 같은 규칙으로 가둔다.
+   pre 규칙이 없어 글 페이지가 390px 화면에서 811px 로 벌어졌다(2026-09-20 실측). */
+.prose pre{overflow-x:auto;max-width:100%;margin:1.75rem 0;padding:1rem 1.1rem;
+  background:var(--wash);border:1px solid var(--hair);border-radius:4px;
+  font-size:.82rem;line-height:1.7}
+.prose pre code{display:block;background:none;padding:0;white-space:pre;
+  overflow-wrap:normal;word-break:normal;font-size:inherit}
