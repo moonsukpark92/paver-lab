@@ -4,96 +4,153 @@
 # stance 는 기사가 업계를 어떻게 다뤘는지이지 기사의 옳고 그름이 아니다.
 #   비판 / 제도 / 기술 / 산업   ·  확인: 링크 열람 여부
 version: 1
-updated: 2026-09-20
-
+updated: '2026-09-21'
 items:
-  - date: "2026-08-12"
-    outlet: 전자신문
-    title: "[人사이트] 김준범 서울과기대 교수 “투수블록 막힘, 물순환 정책까지 막아선 안돼”"
-    url: https://www.etnews.com/20260812000072
-    tag: 제도
-    note: 관리 부실을 이유로 투수블록 정책 자체를 실패로 낙인찍지 말자는 주장.
-  - date: "2026"
-    outlet: 조달경제신문
-    title: "[이색조달] “예산떨이 대명사” 보도블록, 이제 고쳐 쓴다 — 서울시 투수블록 기능 되살리는 용역 발주"
-    url: https://www.jodaleconomy.com/news/articleView.html?idxno=3024
-    tag: 제도
-    note: 교체가 아니라 공극회복으로 방향을 튼 용역. 사업비 약 3억 2,070만원.
-  - date: "2025-02"
-    outlet: 환경일보
-    title: "서울시 투수블록 제도, 허술한 관리로 ‘무용지물’ 우려"
-    url: https://www.hkbs.co.kr/news/articleView.html?idxno=787356
-    tag: 비판
-    note: 7개 구청 취재. 서류 확인 위주의 형식적 감독, 성적서 신뢰성 문제 지적.
-  - date: "2025"
-    outlet: 환경일보
-    title: "서울시, 투수블록 강화로 물 순환 개선"
-    url: https://www.hkbs.co.kr/news/articleView.html?idxno=789225
-    tag: 제도
-    note: 투수지속성 등급 단계 상향 — 3등급 → 2등급, 2027년부터 1등급.
-  - date: "2025"
-    outlet: 동아경제신문
-    title: "‘물빠짐 불량’ 투수블록 퇴출…하반기부터 투수계수 등급제 시행"
-    url: https://www.daenews.co.kr/23831
-    tag: 제도
-    note: 조달청 MAS 상품속성에 투수계수 신설. 1등급 1.0 · 2등급 0.5 · 3등급 0.1 mm/s.
-  - date: "2024"
-    outlet: 환경일보
-    title: "KS인증 투수블록, 6개월만 지나면 무용지물"
-    url: https://www.hkbs.co.kr/news/articleView.html?idxno=765905
-    tag: 비판
-    note: 시공 6개월 뒤 투수 기능 상실 사례. KS 성적서와 현장 성능의 괴리.
-  - date: "2024"
-    outlet: 환경일보
-    title: "폭우에 취약한 서울, 투수성 제고 시급"
-    url: https://www.hkbs.co.kr/news/articleView.html?idxno=763026
-    tag: 산업
-    note: 도시 침수와 불투수면 확대.
-  - date: "2024"
-    outlet: 라펜트
-    title: "생태면적률 위한 투수블록, 유형과 시험방법 다양해졌다"
-    url: https://www.lafent.com/inews/news_view.html?news_id=130119
-    tag: 제도
-    note: KS F 2394(현장 투수량)·ASTM C1701(현장 침투능) 추가. 줄눈재 투수까지 재게 됐다.
-  - date: "2024"
-    outlet: 라펜트
-    title: "생태면적률 위한 투수블록, “지속성 유지돼야”"
-    url: https://www.lafent.com/mbweb/news/view.html?news_id=129977
-    tag: 제도
-    note: 지속성 없는 투수블록은 생태면적으로 인정하기 어렵다는 논의.
-  - date: "2023"
-    outlet: 토목신문
-    title: "환경부, 부적합 투수계수 시험방법 채택 물의"
-    url: http://m.cenews.co.kr/news/articleView.html?idxno=11680
-    tag: 비판
-    note: 시험방법 선택이 제품 유형 간 형평성을 바꾼다는 지적.
-  - date: "2022"
-    outlet: 토목신문
-    title: "투수블록 기준 강화해야"
-    url: http://m.cenews.co.kr/news/articleView.html?idxno=8283
-    tag: 제도
-    note: 기준 강화 요구.
-  - date: "2022"
-    outlet: Landscape Times
-    title: "[조경시대] 건설분야의 손거울, 보도블록"
-    url: https://www.latimes.kr/news/articleView.html?idxno=39519
-    tag: 산업
-    note: 보도블록을 건설 품질의 지표로 보는 칼럼.
-
-# 기사가 아니라 제도 원문 — 함께 둔다. 기사보다 이쪽이 먼저다.
+- date: '2026-08-23'
+  outlet: SBS
+  type: 방송
+  tag: 비판
+  title: '[단독] “애초에 불량” 뒷말…‘물 빠지나’ 새 블록 봤더니'
+  url: https://news.nate.com/view/20260823n14642
+  note: 가장 최근 시공 현장의 블록을 직접 검사. 성적서용 제품과 납품 제품이 같은지 사후 검증이 없다는 지적.
+- date: '2026'
+  outlet: 이투데이
+  type: 기사
+  tag: 제도
+  title: 서울시, 투수블록 검증시험 수수료 25% 인하…장비구매 비용도 낮춰
+  url: https://www.etoday.co.kr/news/view/1228656
+  note: 검증 비용이 진입 장벽으로 작동했다는 뜻이기도 하다.
+- date: —
+  outlet: 도시미래신문
+  type: 기사
+  tag: 산업
+  title: 서울시, 올해 빗물 침투 ‘투수블록’ 설치 확대
+  url: http://m.ufnews.co.kr/main/sub_news_detail.html?wr_id=746
+  note: null
+- date: '2026-08-12'
+  outlet: 전자신문
+  title: '[人사이트] 김준범 서울과기대 교수 “투수블록 막힘, 물순환 정책까지 막아선 안돼”'
+  url: https://www.etnews.com/20260812000072
+  tag: 제도
+  note: 관리 부실을 이유로 투수블록 정책 자체를 실패로 낙인찍지 말자는 주장.
+  type: 기사
+- date: '2026'
+  outlet: 조달경제신문
+  title: '[이색조달] “예산떨이 대명사” 보도블록, 이제 고쳐 쓴다 — 서울시 투수블록 기능 되살리는 용역 발주'
+  url: https://www.jodaleconomy.com/news/articleView.html?idxno=3024
+  tag: 제도
+  note: 교체가 아니라 공극회복으로 방향을 튼 용역. 사업비 약 3억 2,070만원.
+  type: 기사
+- date: 2025-02
+  outlet: 환경일보
+  title: 서울시 투수블록 제도, 허술한 관리로 ‘무용지물’ 우려
+  url: https://www.hkbs.co.kr/news/articleView.html?idxno=787356
+  tag: 비판
+  note: 7개 구청 취재. 서류 확인 위주의 형식적 감독, 성적서 신뢰성 문제 지적.
+  type: 기사
+- date: '2025'
+  outlet: 환경일보
+  title: 서울시, 투수블록 강화로 물 순환 개선
+  url: https://www.hkbs.co.kr/news/articleView.html?idxno=789225
+  tag: 제도
+  note: 투수지속성 등급 단계 상향. 서울시 원문은 「2026.3.부터 2등급 이상 사용 원칙」으로 적고 있다(2025-09-16 수정).
+  type: 기사
+- date: '2025'
+  outlet: 동아경제신문
+  title: ‘물빠짐 불량’ 투수블록 퇴출…하반기부터 투수계수 등급제 시행
+  url: https://www.daenews.co.kr/23831
+  tag: 제도
+  note: 조달청 MAS 상품속성에 투수계수 신설. 1등급 1.0 · 2등급 0.5 · 3등급 0.1 mm/s.
+  type: 기사
+- date: '2024'
+  outlet: 환경일보
+  title: KS인증 투수블록, 6개월만 지나면 무용지물
+  url: https://www.hkbs.co.kr/news/articleView.html?idxno=765905
+  tag: 비판
+  note: 시공 6개월 뒤 투수 기능 상실 사례. KS 성적서와 현장 성능의 괴리.
+  type: 기사
+- date: '2024'
+  outlet: 환경일보
+  title: 폭우에 취약한 서울, 투수성 제고 시급
+  url: https://www.hkbs.co.kr/news/articleView.html?idxno=763026
+  tag: 산업
+  note: 도시 침수와 불투수면 확대.
+  type: 기사
+- date: '2024'
+  outlet: 라펜트
+  title: 생태면적률 위한 투수블록, 유형과 시험방법 다양해졌다
+  url: https://www.lafent.com/inews/news_view.html?news_id=130119
+  tag: 제도
+  note: KS F 2394(현장 투수량)·ASTM C1701(현장 침투능) 추가. 줄눈재 투수까지 재게 됐다.
+  type: 기사
+- date: '2024'
+  outlet: 라펜트
+  title: 생태면적률 위한 투수블록, “지속성 유지돼야”
+  url: https://www.lafent.com/mbweb/news/view.html?news_id=129977
+  tag: 제도
+  note: 지속성 없는 투수블록은 생태면적으로 인정하기 어렵다는 논의.
+  type: 기사
+- date: '2023'
+  outlet: 토목신문
+  title: 환경부, 부적합 투수계수 시험방법 채택 물의
+  url: http://m.cenews.co.kr/news/articleView.html?idxno=11680
+  tag: 비판
+  note: 시험방법 선택이 제품 유형 간 형평성을 바꾼다는 지적.
+  type: 기사
+- date: '2022'
+  outlet: 토목신문
+  title: 투수블록 기준 강화해야
+  url: http://m.cenews.co.kr/news/articleView.html?idxno=8283
+  tag: 제도
+  note: 기준 강화 요구.
+  type: 기사
+- date: '2022'
+  outlet: Landscape Times
+  title: '[조경시대] 건설분야의 손거울, 보도블록'
+  url: https://www.latimes.kr/news/articleView.html?idxno=39519
+  tag: 산업
+  note: 보도블록을 건설 품질의 지표로 보는 칼럼.
+  type: 기사
 sources:
-  - date: "2012-11~"
-    outlet: 서울특별시
-    title: "투수성능 지속성 검증시험 시행"
-    url: https://news.seoul.go.kr/safe/archives/500328
-    note: 협잡물 오염 후 투수계수를 재는 시험. 등급 기준과 절차 원문.
-  - date: "—"
-    outlet: 서울특별시
-    title: "품질시험 : 재료분야 (보차도용 인터로킹 블록)"
-    url: https://news.seoul.go.kr/citybuild/archives/205551
-    note: 검사항목·시료 채취 빈도·허용차.
-  - date: "—"
-    outlet: 국토교통부 / CODIL
-    title: "투수블록포장 기준 개선 연구"
-    url: https://www.codil.or.kr/filebank/original/RK/OTKCRK190199/OTKCRK190199.pdf
-    note: 연구보고서 원문 PDF.
+- date: 2012-11~
+  outlet: 서울특별시
+  title: 투수성능 지속성 검증시험 시행
+  url: https://news.seoul.go.kr/safe/archives/500328
+  note: 협잡물 오염 후 투수계수를 재는 시험. 등급 기준과 절차 원문.
+  type: 제도원문
+- date: —
+  outlet: 서울특별시
+  title: '품질시험 : 재료분야 (보차도용 인터로킹 블록)'
+  url: https://news.seoul.go.kr/citybuild/archives/205551
+  note: 검사항목·시료 채취 빈도·허용차.
+  type: 제도원문
+- date: —
+  outlet: 국토교통부 / CODIL
+  title: 투수블록포장 기준 개선 연구
+  url: https://www.codil.or.kr/filebank/original/RK/OTKCRK190199/OTKCRK190199.pdf
+  note: 연구보고서 원문 PDF.
+  type: 제도원문
+- date: —
+  outlet: 법제처 국가법령정보센터
+  type: 법령·고시
+  title: 물순환 제품·설비 품질인증 기준 및 절차 등에 관한 고시 [별표 1] 투수성 포장재
+  url: https://www.law.go.kr/LSW/flDownload.do?flSeq=145162619
+  note: 품질인증 대상과 기준 원문.
+- date: —
+  outlet: 한국빗물협회
+  type: 제도원문
+  title: 서울시 투수블럭 포장 설계
+  url: http://korearainwater.or.kr/en/bbs/board.php?bo_table=0601&wr_id=8
+  note: 지속성 검증 절차가 인용돼 있는 자료.
+- date: —
+  outlet: ScienceON / KISTI
+  type: 연구
+  title: '[보고서] 다기능 친환경 투수블럭 개발'
+  url: https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO201200009113
+  note: null
+- date: —
+  outlet: 한국콘크리트학회
+  type: 연구
+  title: 서울시 투수지속성 등급화에 따른 콘크리트 인터로킹 투수블록 성능 연구
+  url: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11065002
+  note: null

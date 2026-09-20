@@ -45,7 +45,7 @@
     <nav class="side__sec" aria-labelledby="doc-h">
       <h3 class="side__h" id="doc-h">자료</h3>
       <ul class="links">
-        <li><a href="{{ '/press/' | relative_url }}">기사 모음 <em class="linkn">{{ site.data.press.items | size }}</em></a></li>
+        <li><a href="{{ '/press/' | relative_url }}">자료실 <em class="linkn">{{ site.data.press.items | size | plus: site.data.press.sources.size }}</em></a></li>
         <li><a href="{{ '/standards/' | relative_url }}">표준 원장</a></li>
         <li><a href="{{ '/about/' | relative_url }}">연구소에 대하여</a></li>
         <li><a href="{{ '/en/' | relative_url }}" lang="en" translate="no">English</a></li>
