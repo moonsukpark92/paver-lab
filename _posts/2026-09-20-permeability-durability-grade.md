@@ -6,6 +6,7 @@ lang: ko
 verified: 6
 unverified: 3
 excerpt_text: "준공 성적서는 멀쩡한데 2년 뒤 물이 고인다. 제도는 이미 시험의 축을 바꿨는데, 현장은 아직 준공값만 본다."
+image: /assets/img/og/permeability-durability-grade.png
 ---
 
 *English: [Permeability durability grading tests the dirty paver, not the new one]({{ site.baseurl }}/en/permeability-durability-grade/)*

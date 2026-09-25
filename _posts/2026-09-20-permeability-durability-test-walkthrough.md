@@ -7,6 +7,7 @@ series: "투수 지속성 ①"
 verified: 4
 unverified: 1
 excerpt_text: "시험이 무엇을 모사하는지 보면, 무엇을 모사하지 못하는지도 같이 보인다. 제도를 욕하기 전에 먼저 시험대 위에 올라가 본다."
+image: /assets/img/og/permeability-durability-test-walkthrough.png
 ---
 
 투수 지속성 등급을 놓고 말이 많습니다. 등급이 올라간다, 통과가 어렵다, 성적서를 믿을 수 없다.
